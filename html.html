@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  margin: 0;
+}
+
+.header {
+  background-color: #f1f1f1;
+  padding: 20px;
+  text-align: center;
+}
+
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+.bg {
+  /* The image used */
+  background-image: url("h.jpg");
+
+  /* Full height */
+  height: 100%; 
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+ul.top {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #3B0B0B;
+}
+
+ul.top li (float: left;)
+
+ul.top li a {
+  display: block;
+  color: #D2CDCA;
+  text-align: center;
+  padding: 5px 5px;
+  text-decoration: none;
+}
+
+ul.top li a:hover:not(.active) {
+  background-color: #111;
+}
+
+ul.top a.active {
+  background-color: #D06F33;
+}
+
+ul.top li.right (float: right;)
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+body {font-family: Arial, Helvetica, sans-serif;}
+
+.navbar {
+  width: 100%;
+  background-color: #555;
+  overflow: auto;
+}
+
+.navbar a {
+  float: left;
+  padding: 12px;
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.navbar a:hover {
+  background-color: #000;
+}
+
+.active {
+  background-color: #04AA6D;
+}
+
+@media screen and (max-width: 500px) {
+  .navbar a {
+    float: none;
+    display: block;
+  }
+}
+
+body {
+  font-family: Arial;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  vertical-align: middle;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+  position: relative;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+h2 {text-align: center;}
+
+div.gallery {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 250px;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+div.gallery {
+  border: 1px solid #ccc;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+.browser {
+  background: white;
+}
+
+.browser > h2, p {
+  margin: 4px;
+  font-size: 90%;
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: Black;
+  color: white;
+}
+
+</style>
+</head>
+<body>
+<div class="header">
+  <h1>SWEET TREATS</h1>
+</div>
+<div class="bg"></div>
+<div class="navbar">
+  <a class="active" href="#"><i class="fa fa-fw fa-home"></i> Home</a> 
+  <a href="#"><i class="fa fa-fw fa-special"></i> Best selling</a> 
+  <a href="#"><i class="fa fa-fw fa-menu"></i> Gallery</a> 
+  <a href="#"><i class="fa fa-fw fa-team"></i> Bakers</a>
+  <a href="#"><i class="fa fa-fw fa-contact"></i> Contact</a>
+<div class="slideshow-container">
+
+<div class="container">
+  <div class="mySlides">
+    <img src="img 24.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <img src="img 23.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <img src="img e.jpg" style="width:100%">
+  </div>
+    
+  <div class="mySlides">
+    <img src="img f.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <img src="img 27.jpg" style="width:100%">
+  </div>
+    
+  <div class="mySlides">
+    <img src="a.jpg" style="width:100%">
+  </div>
+    
+  <a class="prev" onclick="plusSlides(-1)">❮</a>
+  <a class="next" onclick="plusSlides(1)">❯</a>
+
+  <div class="caption-container">
+    <p id="caption"></p>
+  </div>
+
+  <div class="row">
+    <div class="column">
+      <img class="demo cursor" src="img 24.jpg" style="width:100%" alt="EGGNOGS">
+	  <div style="color:white;" class="desc">EGGNOGS</div>
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="img 23.jpg" style="width:100%" alt="CHOCO DIP FORTUNE COOKIES">
+	   <div style="color:white;" class="desc">CHOCO DIP FORTUNE COOKIES</div>
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="img e.jpg" style="width:100%" alt="ICE-CREAM WITH FLAVOURED SYRUPS">
+	   <div style="color:white;" class="desc">ICE-CREAM WITH FLAVOURED SYRUPS</div>
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="img f.jpg" style="width:100%" alt="ICE CAKES">
+	   <div style="color:white;" class="desc">ICE CAKES</div>
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="img 27.jpg" style="width:100%" alt="FRUIT AND NUT ICE-CREAM WITH COFFEE BEANS">
+	   <div style="color:white;" class="desc">FRUIT AND NUT ICE-CREAM WITH COFFEE BEANS</div>
+    </div>    
+    <div class="column">
+      <img class="demo cursor" src="a.jpg" style="width:100%" alt="MENU">
+	   <div style="color:white;" class="desc">MENU</div>
+    </div>
+  </div>
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+
+<h2 style="color:white;">SMOOTHIES</h2>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="Blueberry Coconut Milk Smoothie {Dairy Free}.jpg">
+      <img src="Blueberry Coconut Milk Smoothie {Dairy Free}.jpg" alt="Blueberry Coconut Milk Smoothie {Dairy Free}" width="600" height="400">
+    </a>
+    <div style="color:white;" class="desc">Blueberry Coconut Milk Smoothie</div>
+  </div>
+</div>
+
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="Healthy Nutella Smoothie.jpg">
+      <img src="Healthy Nutella Smoothie.jpg" alt="Healthy Nutella Smoothie" width="600" height="400">
+    </a>
+    <div style="color:white;" class="desc">Healthy Nutella Smoothie</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="Banana Coffee Smoothie.jpg">
+      <img src="Banana Coffee Smoothie.jpg" alt="Banana Coffee Smoothie" width="600" height="400">
+    </a>
+    <div style="color:white;" class="desc">Banana Coffee Smoothie</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="Peach And Raspberry Smoothie.jpg">
+      <img src="Peach And Raspberry Smoothie.jpg" alt="Peach And Raspberry Smoothie" width="600" height="400">
+    </a>
+    <div style="color:white;" class="desc">Peach And Raspberry Smoothie</div>
+  </div>
+</div>
+
+<div class="clearfix"></div>
+
+<div style="padding:6px;">
+</div>
+
+<h2 style="color:white;">SUNDAES</h2>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="Hot Fudge and Salted Chocolate Bits Sundae Recipe.png">
+      <img src="Hot Fudge and Salted Chocolate Bits Sundae Recipe.png" alt="Hot Fudge and Salted Chocolate Bits Sundae Recipe" width="600" height="400">
+    </a>
+    <div style="color:white;" class="desc">Hot Fudge and Salted Chocolate Bits Sundae</div>
+  </div>
+</div>
+
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="Chocolate Chip Cookies Salted Peanuts Ice-cream Sundae.jpg">
+      <img src="Chocolate Chip Cookies Salted Peanuts Ice-cream Sundae.jpg" alt="Chocolate Chip Cookies Salted Peanuts Ice-cream Sundae" width="600" height="400">
+    </a>
+    <div style="color:white;" class="desc">Chocolate Chip Cookies Salted Peanuts Ice-cream Sundae</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="Banana Split Breakfast Sundae Bowl.jpg">
+      <img src="Banana Split Breakfast Sundae Bowl.jpg" alt="Banana Split Breakfast Sundae Bowl" width="600" height="400">
+    </a>
+    <div style="color:white;" class="desc">Banana Split Sundae</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="Black Forest Ice Cream Sundae (Vegan) - Bakemas Day 12.png">
+      <img src="Black Forest Ice Cream Sundae (Vegan) - Bakemas Day 12.png" alt="Black Forest Ice Cream Sundae (Vegan) - Bakemas Day 12" width="600" height="400">
+    </a>
+    <div style="color:white;" class="desc">Black Forest Ice Cream Sundae (Vegan)</div>
+  </div>
+</div>
+
+<div class="clearfix"></div>
+
+<div style="padding:6px;">
+</div>
+
+<h2 style="color:white;">CAKES</h2>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="Vegan Fruitcake - by Hein van Tonder, awarded food photographer & stylist.jpg">
+      <img src="Vegan Fruitcake - by Hein van Tonder, awarded food photographer & stylist.jpg" alt="Vegan Fruitcake - by Hein van Tonder, awarded food photographer & stylist" width="600" height="400">
+    </a>
+    <div style="color:white;" class="desc">Raspberry Choco Cake</div>
+  </div>
+</div>
+
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="Recette des Muffins aux pépites de chocolat _ Super facile et moelleux !.jpg">
+      <img src="Recette des Muffins aux pépites de chocolat _ Super facile et moelleux !.jpg" alt="Recette des Muffins aux pépites de chocolat _ Super facile et moelleux !.jpg" width="600" height="400">
+    </a>
+    <div style="color:white;" class="desc">Blueberry Muffins</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="Pavlova dessert with fresh berries.jpg">
+      <img src="Pavlova dessert with fresh berries.jpg" alt="Pavlova dessert with fresh berries.jpg" width="600" height="400">
+    </a>
+    <div style="color:white;" class="desc">Pavlova with Berries</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="Dark and Moody photography.jpg.png">
+      <img src="Dark and Moody photography.jpg" alt="Dark and Moody photography.jpg" width="600" height="400">
+    </a>
+    <div style="color:white;" class="desc">Brownies</div>
+  </div>
+</div><br>
+
+<h2 style="color:white;">MILKSHAKES AND ICE-CREAMS</h2>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="Chocolate Peanut Butter Monster Milkshake.jpg">
+      <img src="Chocolate Peanut Butter Monster Milkshake.jpg" alt="Chocolate Peanut Butter Monster Milkshake" width="600" height="400">
+    </a>
+    <div style="color:white;" class="desc">Chocolate Peanut Butter Monster Milkshake</div>
+  </div>
+</div>
+
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="Oreo Milkshake Recipe.jpg">
+      <img src="Oreo Milkshake Recipe.jpg" alt="Oreo Milkshake Recipe" width="600" height="400">
+    </a>
+    <div style="color:white;" class="desc">Oreo Milkshake</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="Chocolate Marshmallow Swirl Ice Cream.jpg">
+      <img src="Chocolate Marshmallow Swirl Ice Cream.jpg" alt="Chocolate Marshmallow Swirl Ice Cream" width="600" height="400">
+    </a>
+    <div style="color:white;" class="desc">Chocolate Marshmallow Swirl Ice Cream</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="Lavender Rose Ice Cream.jpg">
+      <img src="Lavender Rose Ice Cream.jpg" alt="Lavender Rose Ice Cream" width="600" height="400">
+    </a>
+    <div style="color:white;" class="desc">Lavender Rose Ice Cream</div>
+  </div>
+</div>
+
+<div class="clearfix"></div>
+
+<div style="padding:6px;">
+</div>
+
+  <article class="browser">
+   <img src="i.jpg"
+  </article>
+  
+<footer>
+  <p>20ITB05-JHOSHITHA N A</p><a href="https://www.cafecoffeeday.com/">sweettreats@gmail.com</a></p>
+</footer>
+
+
+</body>
+</html> 
